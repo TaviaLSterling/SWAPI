@@ -3,6 +3,9 @@ import Starship from "../models/Starship.js";
 import Planet from "../models/Planet.js";
 import Vehicle from "../models/Vehicle.js";
 
+let people = {}
+
+
 export default class SwapiService {
     getPeople(draw, drawError) {
         console.log("HELLO FROM SWAPISERVICE")
@@ -10,7 +13,9 @@ export default class SwapiService {
           .then(res => res.json())
           .then(res => {
             let myPeople = res.results.map(rawPerson => {
-                return new Person(rawPerson)
+                let person = new Person(rawPerson)
+                people[person.id] = person
+                return person
             })
             draw(myPeople)
           })

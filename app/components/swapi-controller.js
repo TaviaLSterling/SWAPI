@@ -9,43 +9,50 @@ function draw(data) {
   <div id="error"></div>
 
   <div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-3">
   <button onclick="app.controllers.swapi.getStarships()">
   Get Starships
   </button>
+  <br>
   <div id="starships"></div>
+  <br>
   </div>
-  </div>
+  
   <br>
   
-  <div class="row">
-  <div class="col-sm-4">
+  
+  <div class="col-sm-3">
   <button onclick="app.controllers.swapi.getPeople()">
   Get People
   </button>
+  <br>
   <div id="people"></div>
   </div>
-  </div>
+  <br>
   <br>
 
-  <div class="row">
-  <div class="col-sm-4">
+  
+  <div class="col-sm-3">
   <button onclick="app.controllers.swapi.getPlanets()">
   Get Planets
   </button>
+  <br>
   <div id="planets"></div>
   </div>
-  </div>
+  <br>
   <br>
 
-  <div class="row">
-  <div class="col-sm-4">
+  
+  <div class="col-sm-3">
   <button onclick="app.controllers.swapi.getVehicles()">
   Get Vehicles
   </button>
+  <br>
   <div id="vehicles"></div>
   </div>
+  <br>
   </div>
+
   `
 }
 
